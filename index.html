@@ -335,15 +335,15 @@
   <div class="lbar bot"></div>
 
   <div class="credit" aria-hidden="true">
-    <div class="c-line"><span>image</span><span>背景画像元『gogh』</span></div>
-    <div class="c-line"><span>work</span><span>作品元『天気の子』</span></div>
+    <div class="c-line"><span>image</span><span></span></div>
+    <div class="c-line"><span>work</span><span></span></div>
   </div>
 
   <!-- question screen -->
   <div class="screen screen-q" id="screenQ">
-    <div class="q-overline">— forecast —</div>
+    <div class="q-overline"></div>
     <div class="q-title">明 日 の 天 気 は ？</div>
-    <div class="q-sub">tomorrow's weather</div>
+    <div class="q-sub"></div>
     <div class="choices">
       <button class="choice" data-answer="sunny" type="button">
         <div class="choice-name">晴 れ</div>
@@ -494,7 +494,7 @@
         $('rHeadline').textContent = '大　正　解　！　！';
         $('rHeadline').classList.add('win');
         $('rMessage').textContent = '';        // no consolation message on win
-        $('rTitleName').textContent = '晴 れ 男 ・ 女 ！ ！';
+        $('rTitleName').textContent = '称号：あなたはこれから晴 れ 男 ・ 女 ！ ！';
 $('rTitleName').style.color = '#7fdfff'; // 水色
         $('rTitleName').classList.add('win');
       } else {
@@ -507,7 +507,7 @@ $('rTitleName').style.color = '#7fdfff'; // 水色
         $('rHeadline').textContent = 'ざ　ん　ね　ん';
         $('rHeadline').classList.add('lose');
         $('rMessage').textContent = '明 日 は 晴 れ で し た';
-        $('rTitleName').textContent = '雨 女 ・ 男 か も し れ ま せ ん';
+        $('rTitleName').textContent = '今日から雨 女 ・ 男 か も し れ ま せ ん';
         $('rTitleName').classList.add('lose');
       }
 
